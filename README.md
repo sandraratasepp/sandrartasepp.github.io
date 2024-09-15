@@ -1,5 +1,5 @@
 ### Live project
-Project is live [here](https://sandraratasepp.github.io/)
+Project is live [here](https://sandraratasepp.github.io/sandrartasepp.github.io/)
 
 ### Steps
 Log in with your credentials (username or email and password).
