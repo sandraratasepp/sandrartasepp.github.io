@@ -3,7 +3,7 @@ document.getElementById('logout').addEventListener('click', function() {
 });
 
 function logoutHandler () {
-    Cookies.remove('token');
+    Cookies.remove('jwtToken');
     document.getElementById('page-container').style.display = 'none';
     document.getElementById('login-page').style.display = 'flex';
 

@@ -26,21 +26,23 @@
             <h1>Graphql</h1>
             <button id="logout" class="logout-button">Log out</button>
         </div>
-        <h3>Hello Sandra! 👋🏻</h3>
+        <h3 id="welcome-message">Hello Sandra! 👋🏻</h3>
         <div id="main-section">
             <div id="profile">
                 <h1>Profile</h1>
-                <p>Full name</p>
-                <p>🎂 26/07/1998</p>
-                <p>👥 Username</p>
+                <p id="full-name"></p> 
+                <p id="created-at"></p> 
+                <p id="username"></p> 
+                <p id="email"></p> 
             </div>
             <div id="graphs">
-                <div class="item item-1">Total XP earned</div>
-                <div class="item item-2">XP earned by projects</div>
-                <div class="item item-3">Total XP NUMBER</div>
-                <div class="item item-4">XP earned over time</div>
-                <div class="item item-5">Check out your skills 👉🏻 </div>
-                <div class="item item-6">Skills graph</div>
+                <!-- Bar Chart Container -->
+                <h1>XP earned by month</h1>
+                <div id="chartContainer" class="chart-container"></div>
+
+                <!-- Line Chart Container -->
+                <h1>Top 5 projects</h1>
+                <div id="topProjectsContainer"></div>
             </div>
         </div>
         
@@ -48,6 +50,7 @@
     
     <script type="module" src="login.js"></script>
     <script type="module" src="logout.js"></script>
+    <script type="module" src="userInfo.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
 

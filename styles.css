@@ -13,7 +13,7 @@ h1 {
     font-size: 20px;
     color: rgb(255, 255, 255);
     width: 100%;
-    padding-left: 30px;
+    text-align: center;
 }
 
 h2 {
@@ -96,9 +96,6 @@ p {
     display: flex;
     flex-direction: column;
     background-color: rgb(45, 45, 45);
-    height: 100vh;
-
-
 }
 
 #navbar {
@@ -124,7 +121,8 @@ p {
 
 #profile {
     margin: 20px;
-    justify-content: center;
+    text-align: left;
+    justify-content: left;
     padding: 20px;
     border-radius: 5px;
     border: 1px solid rgba(230, 198, 250, 0.926);
@@ -132,9 +130,8 @@ p {
 }
 
 #graphs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     margin: 20px;
     padding: 20px;
     width: 100%;
@@ -144,44 +141,18 @@ p {
 
 }
 
-.item {
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
+.chart-container {
+    width: 100%;
+    max-width: 800px; /* Set a max width to avoid overflowing */
+    margin: 0 auto; /* Center align the charts */
+    padding: 20px; /* Add some padding around the charts */
+    text-align: center; /* Center align the text */
 }
 
-/* Placing each item in a specific grid cell */
-.item-1 {
-    grid-column: 1; /* First column */
-    grid-row: 1;    /* First row */
+#chartContainer, #auditChartContainer {
+    height: 450px; /* Set a height for each chart container */
 }
 
-.item-2 {
-    grid-column: 2; /* Second column */
-    grid-row: 1;    /* First row */
-}
-
-.item-3 {
-    grid-column: 1; /* First column */
-    grid-row: 2;    /* Second row */
-}
-
-.item-4 {
-    grid-column: 2; /* Second column */
-    grid-row: 2;    /* Second row */
-}
-
-.item-5 {
-    grid-column: 1; /* First column */
-    grid-row: 3;    /* Third row */
-}
-
-.item-6 {
-    grid-column: 2; /* Second column */
-    grid-row: 3;    /* Third row */
-}
 
 
 /* Logout button */
